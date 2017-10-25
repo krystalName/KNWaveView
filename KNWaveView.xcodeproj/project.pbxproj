@@ -13,6 +13,7 @@
 		C20E60A91FA077F900DF6CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20E60A81FA077F900DF6CB6 /* Assets.xcassets */; };
 		C20E60AC1FA077F900DF6CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20E60AA1FA077F900DF6CB6 /* LaunchScreen.storyboard */; };
 		C20E60AF1FA077F900DF6CB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E60AE1FA077F900DF6CB6 /* main.m */; };
+		C20E60B81FA0781100DF6CB6 /* KNWavesView.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E60B71FA0781100DF6CB6 /* KNWavesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C20E60AB1FA077F900DF6CB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C20E60AD1FA077F900DF6CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C20E60AE1FA077F900DF6CB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C20E60B61FA0781100DF6CB6 /* KNWavesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNWavesView.h; sourceTree = "<group>"; };
+		C20E60B71FA0781100DF6CB6 /* KNWavesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNWavesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		C20E609E1FA077F900DF6CB6 /* KNWaveView */ = {
 			isa = PBXGroup;
 			children = (
+				C20E60B51FA0781100DF6CB6 /* WaterRipple */,
 				C20E609F1FA077F900DF6CB6 /* AppDelegate.h */,
 				C20E60A01FA077F900DF6CB6 /* AppDelegate.m */,
 				C20E60A21FA077F900DF6CB6 /* ViewController.h */,
@@ -69,6 +73,15 @@
 				C20E60AE1FA077F900DF6CB6 /* main.m */,
 			);
 			path = KNWaveView;
+			sourceTree = "<group>";
+		};
+		C20E60B51FA0781100DF6CB6 /* WaterRipple */ = {
+			isa = PBXGroup;
+			children = (
+				C20E60B61FA0781100DF6CB6 /* KNWavesView.h */,
+				C20E60B71FA0781100DF6CB6 /* KNWavesView.m */,
+			);
+			path = WaterRipple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +157,7 @@
 			files = (
 				C20E60A41FA077F900DF6CB6 /* ViewController.m in Sources */,
 				C20E60AF1FA077F900DF6CB6 /* main.m in Sources */,
+				C20E60B81FA0781100DF6CB6 /* KNWavesView.m in Sources */,
 				C20E60A11FA077F900DF6CB6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
