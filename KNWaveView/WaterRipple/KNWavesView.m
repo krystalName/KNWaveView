@@ -30,6 +30,7 @@
   Y 轴方向缩放
  */
 @property(nonatomic, assign)CGFloat waveY;
+
 /**
  X 轴方向的平移
  */

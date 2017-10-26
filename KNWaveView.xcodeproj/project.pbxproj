@@ -14,6 +14,7 @@
 		C20E60AC1FA077F900DF6CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20E60AA1FA077F900DF6CB6 /* LaunchScreen.storyboard */; };
 		C20E60AF1FA077F900DF6CB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E60AE1FA077F900DF6CB6 /* main.m */; };
 		C20E60B81FA0781100DF6CB6 /* KNWavesView.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E60B71FA0781100DF6CB6 /* KNWavesView.m */; };
+		C20E60BB1FA1BCFF00DF6CB6 /* KNDownWavesView.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E60BA1FA1BCFF00DF6CB6 /* KNDownWavesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		C20E60AE1FA077F900DF6CB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C20E60B61FA0781100DF6CB6 /* KNWavesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNWavesView.h; sourceTree = "<group>"; };
 		C20E60B71FA0781100DF6CB6 /* KNWavesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNWavesView.m; sourceTree = "<group>"; };
+		C20E60B91FA1BCFF00DF6CB6 /* KNDownWavesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNDownWavesView.h; sourceTree = "<group>"; };
+		C20E60BA1FA1BCFF00DF6CB6 /* KNDownWavesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNDownWavesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				C20E60B61FA0781100DF6CB6 /* KNWavesView.h */,
 				C20E60B71FA0781100DF6CB6 /* KNWavesView.m */,
+				C20E60B91FA1BCFF00DF6CB6 /* KNDownWavesView.h */,
+				C20E60BA1FA1BCFF00DF6CB6 /* KNDownWavesView.m */,
 			);
 			path = WaterRipple;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			files = (
 				C20E60A41FA077F900DF6CB6 /* ViewController.m in Sources */,
 				C20E60AF1FA077F900DF6CB6 /* main.m in Sources */,
+				C20E60BB1FA1BCFF00DF6CB6 /* KNDownWavesView.m in Sources */,
 				C20E60B81FA0781100DF6CB6 /* KNWavesView.m in Sources */,
 				C20E60A11FA077F900DF6CB6 /* AppDelegate.m in Sources */,
 			);
