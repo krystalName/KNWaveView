@@ -99,16 +99,6 @@
 
 }
 
--(void)updateColor{
-    
-    
-    _buttonLayer.fillColor = _bottomColor.CGColor;
-    _buttonLayer.strokeColor = _bottomColor.CGColor;
-    
-    _topLayer.fillColor = _topColor.CGColor;
-    _topLayer.strokeColor = _topColor.CGColor;
-}
-
 -(void)updateWave:(CADisplayLink *)DisplayLink{
     _waveX += _waveMoveSpeed;
     [self updateButtonLayer];
@@ -170,13 +160,21 @@
 
 
 -(void)setBottomColor:(UIColor *)bottomColor{
-    _bottomColor = bottomColor;
-    [self updateColor];
+    if(_bottomColor != bottomColor){
+        _bottomColor = bottomColor;
+        _buttonLayer.fillColor = _bottomColor.CGColor;
+        _buttonLayer.strokeColor = _bottomColor.CGColor;
+    }
 }
 
 -(void)setTopColor:(UIColor *)topColor{
-    _topColor = topColor;
-    [self updateColor];
+    
+    
+    if(_topColor != topColor){
+        _topColor  = topColor;
+        _topLayer.fillColor = _topColor.CGColor;
+        _topLayer.strokeColor = _topColor.CGColor;
+    }
 }
 
 -(void)setWaveY:(CGFloat)WaveY

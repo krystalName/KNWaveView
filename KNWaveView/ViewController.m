@@ -25,6 +25,7 @@
     _WavesView = [[KNWavesView alloc]initWithFrame:CGRectMake(0, 0, waveWidth, waveWidth)];
     _WavesView.center = CGPointMake(self.view.bounds.size.width/2.0f, self.view.bounds.size.width/2.0f);
     _WavesView.backgroundColor = [UIColor grayColor];
+
     
     [self.view addSubview:_WavesView];
 }
