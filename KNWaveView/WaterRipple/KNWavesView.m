@@ -115,6 +115,7 @@
     CGFloat Y = _WaveY;
     //设置起始位置
     CGPathMoveToPoint(path, nil, 0, Y);
+    
         for(float i = 0.0f; i<waterWaveWitdth ; i++)
     {
          //正弦曲线公式为： y=Asin(ωx+φ)+k;
@@ -145,7 +146,7 @@
     for(float i = 0.0f; i<waterWaveWitdth ; i++)
     {
         //正弦曲线公式为： y=Asin(ωx+φ)+k;
-        Y = _waveAmplitude * sin(_wavePalstance * i + _waveX) + _WaveY;
+        Y = _waveAmplitude * sin(_wavePalstance * i + _waveX ) + _WaveY;
         CGPathAddLineToPoint(path, nil, i, Y);
     }
     
