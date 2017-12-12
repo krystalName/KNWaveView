@@ -13,6 +13,8 @@
 
 @property(nonatomic, strong)KNWavesView *WavesView;
 
+@property(nonatomic, strong)UIImageView *headImageView;
+
 @end
 
 @implementation ViewController
@@ -20,16 +22,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGFloat waveWidth = self.view.bounds.size.width * 0.8f;
+    CGFloat waveWidth = self.view.bounds.size.width;
     
     _WavesView = [[KNWavesView alloc]initWithFrame:CGRectMake(0, 0, waveWidth, waveWidth)];
-    _WavesView.center = CGPointMake(self.view.bounds.size.width/2.0f, self.view.bounds.size.width/2.0f);
     _WavesView.backgroundColor = [UIColor grayColor];
-
+    _WavesView.WaveY = 100;
     
     [self.view addSubview:_WavesView];
+    
+    
+    [_WavesView addSubview:self.headImageView];
+    
+    self.headImageView.center = CGPointMake(_WavesView.bounds.size.width/2, 100);
 }
 
+
+-(UIImageView *)headImageView{
+    if (!_headImageView) {
+        _headImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 80, 80)];
+        _headImageView.layer.cornerRadius = 40;
+        _headImageView.backgroundColor = [UIColor redColor];
+        _headImageView.layer.masksToBounds = YES;
+        _headImageView.layer.borderWidth = 0.5;
+        _headImageView.layer.borderColor = [UIColor whiteColor].CGColor;
+    }
+    return _headImageView;
+}
 
 @end
 
